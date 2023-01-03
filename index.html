@@ -3,16 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>Mini Allo-ciné</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-<body>
 
+<body class="bg-secondary">
 
+<h1 class="Tittle text-center text-black bg-light p-4"> Projet Mini Allo-Ciné !</h1>
 
+<div class="container pt-5 mt-5">
+  
+  <div class="row justify-content-center">
+    
+    <div class="col-md-8">
+      <!-- Titre -->
+      <h1 class="text-center mt-5">Météo</h1>
+      
+      <!-- Ville / Temperature -->
+      <div class="text-center">
+        <span id="ville">paris</span>
+        
+        <div id="temperature">
+          <span id="temperature_label">
+            xx.x
+          </span> °C
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  
+  <div class="row justify-content-center">  
+    <div class="col-md-8 text-center">
+      <!-- Changer de ville -->
+      <div id="changer" class="mt-2 text-center p-3 text-white font-weight-bold text-uppercase d-inline-block">
+        Changer de ville
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+    <div class="container">
+      <div class="moovies d-flex justify-content-around flex-wrap"></div>
+    </div>
 
-    <script src=""></script>
-    <script src=""></script>
-    <script src=""></script>
-</body>
+   
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  </body>
 </html>
+
+`<div class="moovies card m-5 mb-3 p-3 " style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-4 ps-5 g-5">
+      <img src=${moovies.Poster}>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h2 class="card-title">${moovies.Title}</h2>
+        <p> Year: ${moovies.Year} <br> Director: ${moovies.Director} <br> Actors: ${moovies.Actors} <br> Runtime: ${moovies.Runtime} <br> Plot: ${moovies.Plot}</p>
+          <p class="card-text"><small class="text-muted"> Metacritic: ${moovies.Metascore}</small></p>
+
+          <div class="images"> 
+          <div class="container text-center">
+          <div class="row align-items-start" style="max-width: 500px;">
+            
+             
+              <div class="col-4">
+               <img src=${moovies.Images[0]} class="img-thumbnail border border-0">
+              </div>
+
+              <div class="col-4">
+               <img src=${moovies.Images[1]} class="img-thumbnail border border-0">
+              </div>
+
+              <div class="col-4">
+               <img src=${moovies.Images[2]} class="img-thumbnail border border-0">
+              </div>
+
+          </div>
+          </div>
+          </div>
+          
+        </div>
+     </div>
+   </div>
+</div>`
